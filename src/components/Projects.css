@@ -1,0 +1,108 @@
+.Projects {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Title Styling */
+.Projects .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Projects .title h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #07608c;
+}
+
+/* Content */
+.Projects .content {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    width: 60%; /* Adjusted width for readability */
+}
+
+/* Responsive Heading */
+.Projects .content h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+/* Contact Button */
+.Projects .content .contact {
+    display: inline-block;
+    background-color: #1565C0;
+    padding: 12px 35px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.Projects .content .contact:hover {
+    background-color: #0d47a1;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .Projects .title h2 {
+        font-size: 40px;
+    }
+
+    .Projects .content {
+        width: 80%;
+    }
+
+    .Projects .content h3 {
+        font-size: 20px;
+    }
+
+    .Projects .content .contact {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Projects .title h2 {
+        font-size: 35px;
+    }
+
+    .Projects .content {
+        width: 90%;
+    }
+
+    .Projects .content h3 {
+        font-size: 18px;
+    }
+
+    .Projects .content .contact {
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Projects .title h2 {
+        font-size: 30px;
+    }
+
+    .Projects .content {
+        width: 100%;
+    }
+
+    .Projects .content h3 {
+        font-size: 16px;
+    }
+
+    .Projects .content .contact {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}

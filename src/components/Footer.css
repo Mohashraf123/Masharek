@@ -1,0 +1,155 @@
+.Footer {
+    width: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/* About Section */
+.Footer .about {
+    width: 40%;
+    text-align: right;
+}
+
+.Footer .about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Title Styling */
+.Footer .title {
+    color: #07608c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Logo Styling */
+.Footer .logo {
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Social Media Section */
+.Footer .social {
+    width: 30%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Social Media Icons */
+.Footer .social a {
+    display: inline;
+    margin: 10px 8px;
+}
+.Footer .social div{
+    display: flex;
+}
+
+.Footer .social img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.Footer .social a:hover img {
+    transform: scale(1.1);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Footer .about,
+    .Footer .social {
+        width: 80%;
+        text-align: center;
+    }
+
+    .Footer .logo {
+        width: 150px;
+        margin: 20px 0;
+    }
+
+    .Footer .title {
+        font-size: 24px;
+    }
+
+    .Footer .about p {
+        font-size: 16px;
+    }
+
+    .Footer .social {
+        flex-direction: row; /* Make social icons appear side by side */
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .Footer {
+        padding: 20px;
+    }
+
+    .Footer .about,
+    .Footer .social {
+        width: 90%;
+    }
+
+    .Footer .title {
+        font-size: 22px;
+    }
+
+    .Footer .logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Footer {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .Footer .about,
+    .Footer .social {
+        width: 100%;
+    }
+
+    .Footer .title {
+        font-size: 20px;
+    }
+
+    .Footer .logo {
+        width: 200px;
+    }
+
+    .Footer .about p {
+        font-size: 14px;
+    }
+
+    .Footer .social {
+        flex-direction: column; /* Keeps social icons side by side */
+    }
+
+    .Footer .social img {
+        width: 35px; /* Smaller icons for mobile */
+        height: 35px;
+    }
+}

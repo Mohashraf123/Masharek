@@ -1,0 +1,129 @@
+/* General Styling */
+.Common {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Styling */
+.Common .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Common .title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #07608c;
+}
+
+/* Questions Content Layout */
+.Common .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+
+/* Centered question in the middle row */
+.Common .content .centered {
+    grid-column: span 2;
+    width: 60%;
+    margin: auto;
+}
+
+/* Question box styling */
+.Common .content div {
+    padding: 20px;
+    border: solid #07608c 1px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.Common .content div:hover {
+    transform: scale(1.03);
+}
+
+/* Question Titles */
+.Common .content div h2 {
+    color: #07608c;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Common .content div p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Common .title h2 {
+        font-size: 35px;
+    }
+
+    .Common .content {
+        grid-template-columns: 1fr; /* Each card takes a full row */
+        gap: 15px;
+        width: 90%;
+        display: flex;
+        flex-direction:column;
+    }
+
+    .Common .content .centered {
+        width: 100%;
+    }
+
+    .Common .content div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Common {
+        padding: 15px;
+    }
+
+    .Common .title h2 {
+        font-size: 30px;
+    }
+
+    .Common .content {
+        width: 100%;
+    }
+
+    .Common .content div h2 {
+        font-size: 18px;
+    }
+
+    .Common .content div p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Common {
+        padding: 10px;
+    }
+
+    .Common .title h2 {
+        font-size: 28px;
+    }
+
+    .Common .content div h2 {
+        font-size: 16px;
+    }
+
+    .Common .content div p {
+        font-size: 14px;
+    }
+}

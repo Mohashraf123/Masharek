@@ -2,7 +2,7 @@ import React from 'react'
 import './Projects.css'
 function Projects() {
   return (
-    <div className='Projects'>
+    <div className='Projects' id='projects'>
     <div className='title'>
         <h2>مشاريعنا</h2>
     </div>

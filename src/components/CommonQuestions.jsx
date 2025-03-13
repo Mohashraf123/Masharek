@@ -3,7 +3,7 @@ import "./Common.css";
 
 function CommonQuestions() {
   return (
-    <div className="Common">
+    <div className="Common" id="common">
       <div className="title">
         <h2>الاسئلة الشائعة</h2>
       </div>

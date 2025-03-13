@@ -6,7 +6,7 @@ import aboutus2 from "../assets/aboutus2.jpg"
 
 function AboutUs() {
   return (
-    <div className="AboutUs">
+    <div className="AboutUs" id="aboutus">
       <div className="title">
         <h2>من نحن</h2>
       </div>

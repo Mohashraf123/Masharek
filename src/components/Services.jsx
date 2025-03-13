@@ -8,7 +8,7 @@ import service4 from "../assets/Acadimic.webp"
 import service5 from "../assets/researchs.jpg"
 function Services() {
   return (
-    <div className='Services'>
+    <div className='Services' id='services'>
         <div className='title'>
             <h2>خدماتنا</h2>
         </div>
@@ -34,7 +34,7 @@ function Services() {
                 <div className='servicecont'>
                     <h2>التحليل الإحصائي </h2>
                 <ul>
-                    <li>حليل البيانات باستخدام البرامج الإحصائية المتخصصة مثل SPSS، AMOS، STATA، وغيرها.</li> 
+                    <li>تحليل البيانات باستخدام البرامج الإحصائية المتخصصة مثل SPSS، AMOS، STATA، وغيرها.</li> 
                     <li>تفسير النتائج الإحصائية وكتابتها بصياغة أكاديمية واضحة.</li>
                     <li>تصميم الاستبيانات وتحليل البيانات الميدانية.</li>
                 </ul>
